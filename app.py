@@ -1,6 +1,6 @@
-from flask import Flask
+from flask import Flask,render_template
 app = Flask(__name__)
 
 @app.route('/')
-def hello_world():
-    return 'For Now My name is Sahil... Website work in progress..'
+def index_page():
+    return render_template('src/index.html')
